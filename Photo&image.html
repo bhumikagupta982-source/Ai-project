@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generation Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: url('https://t4.ftcdn.net/jpg/05/79/54/53/360_F_579545387_6JuKZXKyBuvrGTVxcCIXPZnE5cr41vC9.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        h1:hover {
+            color: black;
+            background-color: #00ffff;
+        }
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        .tool {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px 15px;
+            transition: transform 0.3s, box-shadow 0.3s,;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .tool img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+        .tool h3 {
+            font-size: 1.2rem;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .tool:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+        }
+        .tool:hover img {
+            transform: scale(1.1);
+        }
+        .tool:hover h3 {
+            color: #00ffff;
+        }
+        a {
+            text-decoration: none;
+        }
+        .fixed-btn {
+            position: fixed;
+            right: 15px;
+            bottom: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 15px;  
+        }
+        .fixed-btn:hover {
+            background-color: #732dec;
+            transform: scale(1.05);
+          }
+    </style>
+</head>
+<body>
+    <h1>🎨 Photo / Image Generate karne ke Liye AI Tools</h1>
+
+    <div class="main-box">
+        <div class="tool">
+            <a href="https://openai.com/dall-e-3" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/1200px-Dell_Logo.svg.png" alt="DALL-E 3">
+            </a>
+            <h3>DALL·E 3 (by OpenAI)</h3>
+        </div>
+        <div class="tool">
+            <a href="https://www.midjourney.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg" alt="Midjourney">
+            </a>
+            <h3>Midjourney</h3>
+        </div>
+        <div class="tool">
+            <a href="https://leonardo.ai/" target="_blank">
+                <img src="https://brandlogos.net/wp-content/uploads/2025/05/leonardo_ai-logo_brandlogos.net_ctjsa.png" alt="Leonardo AI">
+            </a>
+            <h3>Leonardo AI</h3>
+        </div>
+        <div class="tool">
+            <a href="https://www.canva.com/magic-media/" target="_blank">
+                <img src="https://replacehumans.ai/wp-content/uploads/2025/01/Untitled-design-2025-01-28T101702.381.png" alt="Canva AI">
+            </a>
+            <h3>Canva AI / Magic Media</h3>
+        </div>
+        <div class="tool">
+            <a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Firefly_Logo.svg/2123px-Adobe_Firefly_Logo.svg.png" alt="Adobe Firefly">
+            </a>
+            <h3>Adobe Firefly</h3>
+        </div>
+        <div class="tool">
+            <a href="https://pixlr.com/" target="_blank">
+                <img src="https://cdn.brandfetch.io/pixlr.com?c=1idGuZjjNQsbnvHtiGk" alt="Pixlr AI">
+            </a>
+            <h3>Pixlr AI</h3>
+        </div>
+        <div class="tool">
+            <a href="https://playground.com/" target="_blank">
+                <img src="https://cdn-1.webcatalog.io/catalog/playground-ai/playground-ai-icon-filled-256.png?v=1714776725001" alt="Playground AI">
+            </a>
+            <h3>Playground AI</h3>
+        </div>
+        <div class="tool">
+            <a href="https://www.bing.com/create" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Bing_Fluent_Logo.svg" alt="Bing Image Creator">
+            </a>
+            <h3>Bing Image Creator</h3>
+        </div>
+        <div class="tool">
+            <a href="https://app.wombo.art/" target="_blank">
+                <img src="https://play-lh.googleusercontent.com/8sF5ru5gJlm0QPnBPoWVhSRbPI1e_J15W13JaruMHFur-AdSZnaoTWgxFQ7b8eBZAlo" alt="Dream by Wombo">
+            </a>
+            <h3>Dream by Wombo</h3>
+        </div>
+        <div class="tool">
+            <a href="https://creator.nightcafe.studio/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAKvNaL8zQtZZcPN0nGLUclP2xzAeOIB-7w&s" alt="NightCafe">
+            </a>
+            <h3>NightCafe</h3>
+        </div>
+    </div>
+    <a href="http://127.0.0.1:5500/AI%20project/Ai2ndpage.html" target="_blank" class="fixed-btn">🔗 Back To Page</a>
+</body>
+</html>
